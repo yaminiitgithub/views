@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans text-gray-800 p-8">
+    <h1 class="text-3xl font-bold mb-8">Submit Secret</h1>
+    <form method="post" action="/submit" class="mb-8">
+        <input type="text" name="secrets" id="secret-input" placeholder="Enter your secret" class="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500" required>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md ml-2">Submit</button>
+    </form>
+    <a href="/logout" class="text-blue-500 font-bold">Logout</a><br><br><hr>
+    <a href="/my_profile" class="text-blue-500 font-bold">Return to Dashboard</a>
+
+</body>
+</html>
